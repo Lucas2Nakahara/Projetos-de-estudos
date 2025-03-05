@@ -1,0 +1,1 @@
+Esses projetos são de vários estudos que tenho que aprender por demandas mas também por interesse nessas áreas, dentro de cada pasta de estudos vão estar assuntos, vou tentar deixar uma breve explicação e documentação.
