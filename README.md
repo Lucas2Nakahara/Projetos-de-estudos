@@ -1,0 +1,1 @@
+Esse programa/pastas, vai ser um conjunto de pequenos estudos e códigos que fiz ao longo do tempo, tudo que for por partes e não for um projeto final, vou deixar por aqui, para faciltiar caso queira pegar algo em específico também.
