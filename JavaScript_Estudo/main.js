@@ -17,9 +17,9 @@
 document.body.innerText = JSON.stringify(Object.entries(user))*/
 
 //desestruturação
-function mostraIdade(user) {
-    return user.idade; 
-}
+//function mostraIdade(user) {
+ //   return user.idade; 
+//}
 
 //const { address, idade, nickname = 'Fernandes' } = user
 
@@ -27,3 +27,8 @@ function mostraIdade(user) {
 //document.body.innerText = mostraIdade(user)
 
 //*** Rest Operator = Operador de Resto*/ 
+
+// Nullish Coalescing Operator
+const idade = 27;
+
+document.body.innerText = 'Sua idade é: ' + idade;
