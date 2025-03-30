@@ -19,12 +19,15 @@
     <div>Clique em mim</div>
 
     <script>
-        //window.document.write('Olá Mundo!'); // Escreve na página HTML
-        //window.document.write(window.documment.charset);     // Escreve na página HTML o charset do documento
-        //window.document.write(window.navigator.appName);  // Escreve na página HTML o nome do navegador
+        //window.document.write('Olá Mundo!');                  // Escreve na página HTML
+        //window.document.write(window.documment.charset);      // Escreve na página HTML o charset do documento
+        //window.document.write(window.navigator.appName);      // Escreve na página HTML o nome do navegador
+        var corpo = window.document.body;                       // Pega o elemento <body> do documento
         var p1 = window.document.getElementsByTagName('p') [0]; // Pega todos os elementos <p> do documento
-        window.document.write(p1.innerText); // Escreve na página HTML o conteúdo do primeiro <p>
-        //window.document.write(window.document.URL);      // Escreve na página HTML a URL do documento
+        corpo.style.background = 'black';                       // Altera a cor de fundo do <body> para preto
+        p1.style.color = 'blue';                                // Altera a cor do primeiro <p> para azul
+        //window.document.write(p1.innerText);                  // Escreve na página HTML o conteúdo do primeiro <p>
+        //window.document.write(window.document.URL);           // Escreve na página HTML a URL do documento
         
     </script>
 </body>
