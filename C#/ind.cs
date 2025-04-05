@@ -8,4 +8,6 @@ public class EnemyAI : MonoBehaviour {
 
     string enemyName = "Goblin"; //tipo string passando o nome entre aspas duplas
 
+    bool 
+
 }
