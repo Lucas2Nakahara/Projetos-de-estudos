@@ -16,7 +16,7 @@
     <h1>Inicinando estudos DOM</h1>
     <p>aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>
         //window.document.write('Olá Mundo!');                  // Escreve na página HTML
@@ -24,11 +24,29 @@
         //window.document.write(window.navigator.appName);      // Escreve na página HTML o nome do navegador
         var corpo = window.document.body;                       // Pega o elemento <body> do documento
         var p1 = window.document.getElementsByTagName('p') [0]; // Pega todos os elementos <p> do documento
-        corpo.style.background = 'black';                       // Altera a cor de fundo do <body> para preto
-        p1.style.color = 'blue';                                // Altera a cor do primeiro <p> para azul
+        //corpo.style.background = 'black';                     // Altera a cor de fundo do <body> para preto
+        //p1.style.color = 'blue';                              // Altera a cor do primeiro <p> para azul
         //window.document.write(p1.innerText);                  // Escreve na página HTML o conteúdo do primeiro <p>
         //window.document.write(window.document.URL);           // Escreve na página HTML a URL do documento
-        
+        document.write(p1.innerHTML);                           // Escreve na página HTML o conteúdo HTML do primeiro <p> 
+        //window.document.write(window.document.title);         // Escreve na página HTML o título do documento
+        //window.document.write(window.document.domain);        // Escreve na página HTML o domínio do documento
+        //window.alert(pq.innerText);                           //exibe o conteudo da tela sem a foormatação e sem as tags filhas
+        //window.alert(pq.innerHTML);                           //exibe o conteudo da tela com as tags filhas sendo o InnerHTML
+        //var d = window.document.getElementById('msg');
+        //d.style.background = 'green'; // Altera a cor de fundo do <div> para verd
+        //d.innerText = 'Estou aguardando...';
+        //window.document.getElementById('msg').innerText = 'Olá';
+        /*
+        var d = window.document.getElementByName('msg')[0]; //os elementos começam em 0
+        d.style.document = 'red'; // Altera a cor de fundo do <div> para vermelho
+        d.innerText = 'Ola pessoal do Mundo!...';
+        window.documento.getElementsByClassName('msg');
+        */
+        var d = window.document.querySelector('div#msg'); // Seleciona o elemento <div> com id "msg" // da para usar isso também
+        d.style.color = 'blue'; // Altera a cor do texto do <div> para azul
+        // # = id
+        // . = class
     </script>
 </body>
 </html>
