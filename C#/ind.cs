@@ -8,6 +8,12 @@ public class EnemyAI : MonoBehaviour {
 
     string enemyName = "Goblin"; //tipo string passando o nome entre aspas duplas
 
-    bool 
+    bool isDead = true; //tipo bool passando o valor verdadeiro ou falso
+    // Start is called before the first frame update
+    // se um inimigo esta morto ou não, se ele estiver morto o valor é true, se não o valor é false
+    void Start() {
+        // Inicia o inimigo com um nome e uma velocidade
+        Debug.Log("Inimigo criado: " + enemyName + " com velocidade: " + speed);
+    }
 
 }
