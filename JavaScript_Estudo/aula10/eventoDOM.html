@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font: normal 20pt Arial sans-serif;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 600px;
+            height: 500px;
+            border: 1px solid rgba(0, 0, 0, 0.116);
+            border-radius: 12px;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+            background-color: rgb(40, 40, 107);
+            color: white;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        #res {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1"> 
+        <span>+</span>
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="res">Resultado</div>
+    </div>
+
+    <script>
+        function somar () {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res') //pega o elemento com id res
+            //quando é o id, preferivel usar o getElementById, mas se for uma classe, usar o querySelector é até mais moderno.
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A doma entre ${n1} e ${n2} é igual a ${s}` //o innerHTML serve para colocar o resultado dentro do elemento res, que é o div.
+        }
+    </script>
+</body>
+</html>
