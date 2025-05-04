@@ -18,6 +18,7 @@
             width: 100vw;
             justify-content: center;
             align-items: center;
+            background: linear-gradient(to top, #011b35, #52c1f8); /* gradiente de cima para baixo; BACKGROUND funciona o linear-gradient para a posição que você quer com to, e a posição como top, e as cores #, # ); */
         }
         #container {
             display: flex;
@@ -36,6 +37,7 @@
         input {
             font: normal 18pt Arial;
             width: 100px;
+            margin: 5px;
         }
         #res {
             margin-top: 10px;
@@ -62,7 +64,7 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A doma entre ${n1} e ${n2} é igual a ${s}` //o innerHTML serve para colocar o resultado dentro do elemento res, que é o div.
+            res.innerHTML = `A doma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` //o innerHTML serve para colocar o resultado dentro do elemento res, que é o div.
         }
     </script>
 </body>
